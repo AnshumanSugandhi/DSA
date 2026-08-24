@@ -187,21 +187,79 @@ n=5
 # ****  ****
 # **********
 
-# Top half
-for i in range(n, 0, -1):
-    # Stars
-    print("*" * i, end="")
-    # Spaces
-    print(" " * (2 * (n - i)), end="")
-    # Stars
-    print("*" * i)
+# # Top half
+# for i in range(n, 0, -1):
+#     # Stars
+#     print("*" * i, end="")
+#     # Spaces
+#     print(" " * (2 * (n - i)), end="")
+#     # Stars
+#     print("*" * i)
 
-# Bottom half
-for i in range(1, n + 1):
-    # Stars
-    print("*" * i, end="")
-    # Spaces
-    print(" " * (2 * (n - i)), end="")
-    # Stars
-    print("*" * i)
+# # Bottom half
+# for i in range(1, n + 1):
+#     # Stars
+#     print("*" * i, end="")
+#     # Spaces
+#     print(" " * (2 * (n - i)), end="")
+#     # Stars
+#     print("*" * i)
 
+
+# *        *     1
+# **      **     2
+# ***    ***     3
+# ****  ****     4 
+# **********     5
+# ****  ****     6
+# ***    ***     7
+# **      **     8
+# *        *     9
+
+
+# for i in range (1,2*n):
+#     if i <= n:
+#         for j in range (i):
+#             print("*",end="")
+#         print(" " * (2*n-2*i),end="")
+#         for j in range(i,0,-1):
+#             print("*",end="")
+#     else:
+#         for j in range (2*n-i,0,-1):
+#             print("*",end="")
+#         print(" " * (2*(i-n)),end="")
+#         for j in range(2*n-i,0,-1):
+#                     print("*",end="")
+#     print()
+    
+    
+# *****
+# *   *
+# *   *
+# *   *
+# *****
+
+# for i in range (1,n+1):
+#     if i ==1 or i==n:
+#         print("*" * n,end="")
+#     else:
+#         print("*" + " " * (n - 2) + "*")
+#     print()
+
+# 5 5 5 5 5 5 5 5 5 
+# 5 4 4 4 4 4 4 4 5 
+# 5 4 3 3 3 3 3 4 5 
+# 5 4 3 2 2 2 3 4 5 
+# 5 4 3 2 1 2 3 4 5 
+# 5 4 3 2 2 2 3 4 5 
+# 5 4 3 3 3 3 3 4 5 
+# 5 4 4 4 4 4 4 4 5 
+# 5 5 5 5 5 5 5 5 5
+
+# size = 2 * n - 1
+
+# for i in range(1, size + 1):
+#     for j in range(1, size + 1):
+#         value = n - min(i, j, size - i + 1, size - j + 1) + 1
+#         print(value, end=" ")
+#     print()

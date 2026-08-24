@@ -1,2 +1,2 @@
-    for k in range  (i,0,-1):
+    for j in range (2*n-i,0,-1):
     
